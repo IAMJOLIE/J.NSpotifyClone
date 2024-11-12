@@ -1,5 +1,6 @@
 import { Avatar, ListItem, ListItemAvatar, ListItemButton, ListItemText, Skeleton } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+
 const PlaylistItem = ({loading, name, images, id}) => {
     const nav = useNavigate();
     if (loading) {

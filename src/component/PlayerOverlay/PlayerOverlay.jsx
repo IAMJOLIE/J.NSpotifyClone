@@ -2,7 +2,7 @@ import { Box, Container, Grid, IconButton, Typography } from '@mui/material';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import PlayControls from '../PlayControls/PlayControls';
 
-import PlayVolum2 from '../PlayVolum2/PlayVolum2';
+
 
 
 const PlayerOverlay = ({
