@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Box, List, Typography } from '@mui/material';
 
-import PlaylistItem from '../component/Playlistitem/Playlistitem.jsx';
+import PlaylistItem from '../component/PlaylistItem/PlaylistItem';
 
 const Library = ({ spotifyApi, token }) => {
 	const [playList, setPlayList] = useState(null);
