@@ -12,7 +12,7 @@ const Home = () => {
         
         gap: 4,
        }}>
-        <img src="/Me.JPG" alt="Julia" style={{ maxWidth: '50%', maxHeight: '50%'}} />
+        <img src="/Me.JPG" alt="Julia Nalband" style={{ maxWidth: '50%', maxHeight: '50%'}} />
         <Button variant='contained'
          href="mailto:julia_157nalband@outlook.com" size="large"
          target="_blank">
