@@ -38,6 +38,8 @@ const Player = ({ spotifyApi }) => {
 
 			player.addListener('not_ready', ({ device_id }) => {
 				console.log('Device ID has gone offline', device_id);
+				setDevice(device_id);
+				setLocalPlayer(player);
 			});
 
 			player.addListener('player_state_changed', (state) => {

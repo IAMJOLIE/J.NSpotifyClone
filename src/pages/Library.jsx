@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
 import { Box, List, Typography } from '@mui/material';
 
-import PlaylistItem from '../component/PlaylistItem/PlaylistItem.jsx';
+
+
+import PlayItem from '../component/PlayItem/PlayItem';
 
 
 
@@ -23,10 +25,10 @@ const Library = ({ spotifyApi, token }) => {
 
 	const renderPlaylistItems = () => {
 		if (loading) {
-			return [1, 2, 3, 4, 5, 6, 7].map((_, i) => <PlaylistItem key={i} loading={loading} />);
+			return [1, 2, 3, 4, 5, 6, 7].map((_, i) => <PlayItem key={i} loading={loading} />);
 		}
 
-		return playList.map((playlist, i) => <PlaylistItem key={i} {...playlist} loading={loading} />);
+		return playList.map((playlist, i) => <PlayItem key={i} {...playlist} loading={loading} />);
 	};
 	return (
 		<Box
