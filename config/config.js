@@ -4,6 +4,7 @@ export const clintSecret = import.meta.env.VITE_CLIENT_SECRET;
 export const liveURL = import.meta.env.VITE_LIVE_URL;
 export const devURL = 'http://localhost:5173/';
 export const redirectURL = import.meta.env.PROD ? liveURL : devURL;
+console.log(liveURL);
 export const scopes = [
 	'playlist-read-collaborative',
 	'playlist-modify-public',
